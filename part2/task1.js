@@ -1,8 +1,6 @@
 function metode() {
-    const daftar = [
-        { nama: "reverse", fungsi: "membalik" },
-        { nama: "join", fungsi: "merubah array menjadi string" }
-    ]
+    const daftar = ["membalik", "merubah array menjadi string"]
+    const [reverse, join] = daftar;
     return (daftar)
 }
 console.log(metode())
