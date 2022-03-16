@@ -10,7 +10,7 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
         for (let i = 0; i <= dataArray.length - 1; i++) { //proses pencarian
             if (nilaiAwal <= dataArray[i] && nilaiAkhir >= dataArray[i]) {
                 hasilArray.push(dataArray[i])
-                hasil = hasilArray
+                hasil = hasilArray.sort((a, b) => a - b)
             } else if (hasilArray.length == 0) { //jika tidak ada angka yang tepat pada array
                 hasil = "Nilai tidak ditemukan"
             } else { "" }
@@ -18,4 +18,4 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     }
     return (hasil)
 }
-console.log(SeleksiNilai(4, 5, [2, 1, 6, 6, 20]))
+console.log(SeleksiNilai(1, 20, [2, 1, 6, 6, 20]))
