@@ -1,4 +1,4 @@
-let array = [1, 5, 7, 2, 5, ]
+let array = [1, 5, 7, 2, 5]
 let list = ["aku", "kamu", "dia"]
 
 // 1. join()
@@ -20,11 +20,11 @@ let list = ["aku", "kamu", "dia"]
 
 // 3. pop ()
 // digunakan untuk menghapus / remove isi array paling akhir.
-// function Pop() {
-//     let z = array.pop()
-//     return (z)
-// }
-// console.log(Pop(), array)
+function Pop() {
+    let z = array.pop()
+    return (z)
+}
+console.log(Pop(), array)
 
 
 // 4. shift ()
@@ -55,7 +55,7 @@ let list = ["aku", "kamu", "dia"]
 
 
 // 7. sort()
-// Metode ini berfungsi untuk mengurutkan elemen pada array
+// digunakan untuk mengurutkan elemen pada array
 // function Sort() {
 //     let z = array.sort()
 //     return (z)
@@ -64,7 +64,7 @@ let list = ["aku", "kamu", "dia"]
 
 
 // 8. include()
-// Metode ini berfungsi untuk mengecek apakah pada elemen array memenuhi suatu kondisi atau tidak.
+// digunakan untuk mengecek apakah pada elemen array memenuhi suatu kondisi atau tidak.
 // function Includes(x) {
 //     let z = array.includes(x)
 //     return (z)
@@ -73,7 +73,7 @@ let list = ["aku", "kamu", "dia"]
 
 
 // 9. forEach()
-// Metode ini berfungsi untuk melakukan pengulangan di dalam array.
+// digunakan untuk melakukan pengulangan di dalam array.
 // function foreach() {
 //     let z = array.forEach(item => console.log(item))
 //     return (z)
@@ -81,7 +81,7 @@ let list = ["aku", "kamu", "dia"]
 // console.log(foreach())
 
 // 10 reverse()
-// Mengakumulasikan atau mengurangi nilai berdasarkan elemen di dalam array.
+// digunakan untuk mengurutkan elemen dalam array dari index yang paling tinggi ke rendah.
 // function Reverse() {
 //     let z = array.reverse()
 //     return (z)
