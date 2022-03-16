@@ -12,12 +12,12 @@ let list = [{ metode: 'filter', fungsi: 'Creates a new array with every element 
 let listmetode = ['filter', 'find', 'from', 'join', 'map', 'pop', 'push', 'reduce', 'reverse', 'splice']
 
 function metode(x) {
-    let cek = listmetode.includes(x);
+    let cek = listmetode.includes(x); //proses apakah metode tersedia di list
     if (cek == false) {
-        return ("metode tidak tersedia")
+        return ("metode tidak tersedia di library")
     } else {
-        const z = list.find(met => met.metode === x);
+        const z = list.find(met => met.metode === x); //proses pencarian metode di list
         return (z)
     }
 }
-console.log(metode('print'))
+console.log(metode('splice'))
