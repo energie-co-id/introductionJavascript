@@ -1,0 +1,15 @@
+{
+  "name": "implement-code",
+  "version": "1.0.0",
+  "description": "testing installation dependecies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jauhar Maknun Adib",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

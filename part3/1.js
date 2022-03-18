@@ -20,9 +20,9 @@ const cekHariKerja = (day) => {
 // a. 'then' akan menghandle hasil promise bila promise terisolve, 
 // b. 'catch' akan menghandle bila promise teriject.
 
-const day = 'minggu'
-cekHariKerja(day).then((cek) => {
-        console.log('hari ini hari ' + cek)
+const day = 'senin'
+cekHariKerja(day).then((result) => {
+        console.log('hari ini hari ' + result)
     })
     .catch((error) => { console.log(error) })
 
@@ -32,7 +32,7 @@ cekHariKerja(day).then((cek) => {
 // 'catch' untuk menentukan blok kode yang akan dieksekusi, jika terjadi kesalahan dalam blok try.
 async function hari() {
     try {
-        const day = 'minggu'
+        const day = 'selasa'
         const cek = await cekHariKerja(day)
         console.log('hari ini hari ' + cek)
     } catch (error) {

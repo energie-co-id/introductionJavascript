@@ -26,4 +26,4 @@ function searchName(inis, max, callback) {
     hasil.length == 0 ? hasil = "hasil tidak ditemukan" : ""; //proses jika inisial tidak ditemukan
     return (hasil)
 }
-console.log(searchName('azaa', 2, array(name)))
+console.log(searchName('a', 2, array(list)))
