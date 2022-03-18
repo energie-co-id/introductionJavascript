@@ -10,28 +10,24 @@ const getMonth = (callback) => {
             if (!error) {
                 callback(null, month)
             } else {
-                callback(new Error('Sorry Data Not Found', []))
+                callback('Sorry Data Not Found', [])
             }
         }, 4000)
     })
 }
 
-const showMonth = (x, month) => {
-
+const showMonth = (data) => {
     setTimeout(() => {
-        if (x == Error) {
+        if (data.length == 0) {
             console.log(new Error('Sorry Datanya error'))
-        } else if (month.length == 12) {
-            month.map((value, index, arr) => {
+        } else if (data.length == 12) {
+            data.map((value, index, arr) => {
                 console.log(value)
             })
-        } else {
-            let y = 'month'
-            console.log(new Error('Data tidak ditemukan'))
         }
     }, 1000)
 }
 
-getMonth((NaN, result) => {
-    showMonth(result, result)
+getMonth((NaN, data) => {
+    showMonth(data)
 })
