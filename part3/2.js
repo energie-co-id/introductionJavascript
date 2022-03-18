@@ -1,7 +1,7 @@
 const getMonth = (callback) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let error = false
+            let error = true
             let month = [
                 'Januari', 'Februari', 'Maret', 'April',
                 'Mei', 'Juni', 'Juli', 'Agustus', 'September',
@@ -10,7 +10,7 @@ const getMonth = (callback) => {
             if (!error) {
                 callback(null, month)
             } else {
-                callback('Sorry Data Not Found', [])
+                callback(new Error('Sorry Data Not Found'), [])
             }
         }, 4000)
     })
@@ -19,7 +19,7 @@ const getMonth = (callback) => {
 const showMonth = (data) => {
     setTimeout(() => {
         if (data.length == 0) {
-            console.log(new Error('Sorry Datanya error'))
+            console.log(new Error('Sorry Data Not Fond'))
         } else if (data.length == 12) {
             data.map((value, index, arr) => {
                 console.log(value)

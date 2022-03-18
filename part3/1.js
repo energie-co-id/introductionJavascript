@@ -14,11 +14,13 @@ const cekHariKerja = (day) => {
     })
 }
 
-// const day = 'minggu'
+
 //then,catch
 //Fungsi dari then dan catch yaitu: 
-// a. 'then' akan menghandle hasil eksekusi baik itu berhasil maupun gagal, 
-// b. 'catch' akan menghandle bila terdapat error pada kode.
+// a. 'then' akan menghandle hasil promise bila promise terisolve, 
+// b. 'catch' akan menghandle bila promise teriject.
+
+const day = 'minggu'
 cekHariKerja(day).then((cek) => {
         console.log('hari ini hari ' + cek)
     })
@@ -30,7 +32,7 @@ cekHariKerja(day).then((cek) => {
 // 'catch' untuk menentukan blok kode yang akan dieksekusi, jika terjadi kesalahan dalam blok try.
 async function hari() {
     try {
-        const day = 'senin'
+        const day = 'minggu'
         const cek = await cekHariKerja(day)
         console.log('hari ini hari ' + cek)
     } catch (error) {
