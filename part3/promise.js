@@ -79,13 +79,13 @@ const cetakLuas = (luas) => {
 
 // [1]
 const r = "7"
-    // menentukanPhi(r).then((phi) => {
-    //     // result = phi
-    //     hitungLuas(phi, r).then((luas) => {
-    //         // result = luas
-    //         cetakLuas(luas)
-    //     })
-    // })
+menentukanPhi(r).then((phi) => {
+    // result = phi
+    hitungLuas(phi, r).then((luas) => {
+        // result = luas
+        cetakLuas(luas)
+    })
+})
 
 // [2]
 menentukanPhi(r)

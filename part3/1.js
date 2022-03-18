@@ -19,10 +19,10 @@ const cekHariKerja = (day) => {
 //Fungsi dari then dan catch yaitu: 
 // a. 'then' akan menghandle hasil eksekusi baik itu berhasil maupun gagal, 
 // b. 'catch' akan menghandle bila terdapat error pada kode.
-// cekHariKerja(day).then((cek) => {
-//         console.log('hari ini hari ' + cek)
-//     })
-//     .catch((error) => { console.log(error) })
+cekHariKerja(day).then((cek) => {
+        console.log('hari ini hari ' + cek)
+    })
+    .catch((error) => { console.log(error) })
 
 //try,catch
 //Fungsi dari try dan catch yaitu:
