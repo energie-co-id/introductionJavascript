@@ -13,7 +13,8 @@
 // npm install -g nodemon
 
 //install(
-
+//gitlens
+//eslint
 //prettier
 //)
 
