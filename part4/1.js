@@ -1,23 +1,22 @@
 const cekPalindrom = (kata) => {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (typeof(kata) != 'string') {
-                reject(new Error('input harus string'))
+        if (typeof(kata) != 'string') {
+            reject(new Error('input harus string'))
+        } else {
+            let x = kata.toLowerCase()
+            let y = x.split("").reverse().join("")
+            let hasil
+            if (x === y) {
+                hasil = "Palindrom"
             } else {
-                let x = kata.toLowerCase()
-                let y = x.split("").reverse().join("")
-                let hasil
-                if (x === y) {
-                    hasil = "Palindrom"
-                } else {
-                    hasil = "Bukan Palindrom"
-                }
-                resolve(console.log(hasil))
+                hasil = "Bukan Palindrom"
             }
-        }, 1000)
+            resolve(hasil)
+        }
     })
 }
 
 
-cekPalindrom('Malam')
+cekPalindrom('malam')
+    .then((result) => console.log(result))
     .catch((error) => console.log(error))

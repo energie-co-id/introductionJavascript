@@ -1,17 +1,15 @@
 const reverseWord = (kalimat) => {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (typeof(kalimat) != 'string') {
-                reject(new Error('input harus string'))
-            } else {
-                let x = kalimat.toLowerCase()
-                let hasil = x.split(" ").reverse().join(" ")
-                console.log(hasil)
-                resolve(hasil)
-            }
-        }, 1000)
+        if (typeof(kalimat) != 'string') {
+            reject(new Error('input harus string'))
+        } else {
+            let x = kalimat.toLowerCase()
+            let hasil = x.split(" ").reverse().join(" ")
+            resolve(hasil)
+        }
     })
 }
 
 reverseWord('Saya Belajar Javascript')
+    .then((result) => console.log(result))
     .catch((error) => console.log(error))
